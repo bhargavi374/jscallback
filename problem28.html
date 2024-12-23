@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        28.Personal Savings Calculator
+        Based on monthly income and expenses, calculate savings and provide
+        suggestions.
+    </h3>
+    <script>
+        function savings() {
+            let salary = Number(prompt("enter your salary:"));
+            let expenses = Number(prompt("enter your total expenses:"));
+            let savings = salary - expenses;
+            if (savings >= (25 / 100) * salary) {
+                console.log(`you are saving good amount of money`);
+            }
+            else if ((savings >= (10 / 100) * salary) && (savings < (25 / 100) * salary)) {
+                console.log(`you need to save a little more money`);
+            }
+            else if (savings < (10 / 100) * salary) {
+                console.log(`you need to save money `);
+            }
+            else if (savings <= 0) {
+                console.log(`you are in loss and you are not saving money`);
+            }
+        }
+    </script>
+</body>
+
+</html>

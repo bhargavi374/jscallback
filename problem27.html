@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>27.Movie Rating Calculator
+        Collect ratings from viewers and calculate the average rating.
+    </h3>
+    <script>function average() {
+            let num = Number(prompt("enter number of ratings:"));
+            let total = 0;
+            for (let i = 1; i <= num; i++) {
+                let rating = Number(prompt(`enter the rating of person ${ i }`));
+                total += rating;
+            }
+
+            console.log(`the average ratiung of the movie is ${ total / num}`);
+        }
+    </script>
+</body>
+
+</html>

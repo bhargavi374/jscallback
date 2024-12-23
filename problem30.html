@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        30.School Marksheets
+        For each student in a class, input marks for subjects and calculate their
+        total and average marks.
+    </h3>
+    <script>
+        function total() {
+            let total = 0;
+            let maths = Number(prompt("enter math marks:"));
+            let physics = Number(prompt("enter physics marks:"));
+            let chemistry = Number(prompt("enter chemistry marks:"));
+            total = maths + physics + chemistry;
+            return total;
+        }
+        function avgOfStudent() {
+            let num = Number(prompt("enter number of students:"));
+            for (let i = 1; i <= num; i++) {
+                let total = total();
+                console.log(`the total of the student ${i} is ${total} and the average is ${total / 3} `)
+            }
+        }
+
+    </script>
+</body>
+
+</html>

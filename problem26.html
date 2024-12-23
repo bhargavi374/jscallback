@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>26.Bookstore Purchase Summary
+        Given a list of books with prices, print the total cost and categorize
+        based on price ranges.</h3>
+    <script>
+
+        function bookPurchase() {
+            let num = Number(prompt("Number of books you purchased : "));
+            let total = 0;
+            let low = 0, mid = 0, high = 0;
+
+            for (let i = 0; i < num; i++) {
+                let bookName = prompt(`Enter the name of book ${ i + 1}:`);
+            let bookPrice = Number(prompt(`Enter the price of ${ bookName }: `));
+            total += bookPrice;
+
+            if (bookPrice < 10) {
+                low++;
+            } else if (bookPrice >= 10 && bookPrice <= 20) {
+                mid++;
+            } else {
+                high++;
+            }
+        }
+
+        console.log(`the total cost is: ${ total }`);
+        console.log(`there are ${ low } cost books`);
+        console.log(`there are ${ mid } cost books`);
+        console.log(`there are ${ high } cost books`);
+}
+
+    </script>
+</body>
+
+</html>
